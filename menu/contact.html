@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="../css/all.css">
+	<link rel="stylesheet" href="../css/bootstrap.min.css">
+	<link rel="stylesheet" href="../css/style.css">
+	<link rel="stylesheet" href="../css/menu.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+		integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+		crossorigin="anonymous" referrerpolicy="no-referrer">
+	<link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Josefin+Sans:400,700" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Great+Vibes" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+	<link rel="website icon" type="jpg" href="../images/iconweb.jpg">
+	<title>Contact Us</title>
+
+</head>
+
+<body>
+	<header class="header--to-all">
+            <!--=========================== navigation ========================= -->
+            <nav class="navigation">
+                <!-- =======menu-btn=========== -->
+                
+                <!-- home -->
+                <div class="home-btn">
+
+                    <ul>
+                        <a href="../index.html">
+                            <li>
+                                <h3>Home</h3>
+                            </li>
+                        </a>
+                        <a href="../menu/menu.html">
+                            <li>
+                                <h3>Menu</h3>
+                            </li>
+                        </a>
+                        <a href="../menu/contact.html">
+                            <li>
+                                <h3>Contact</h3>
+                            </li>
+                        </a>
+                    </ul>
+
+                </div>
+                <!-- =============logo========== -->
+                <a href="#" class="logo">
+                    <img src="../images/logo.png" alt="logo" />
+                </a>
+                <!-- nav-btn -->
+                <div class="nav-btn">
+
+                    <!-- user -->
+                    <a class="nav-user">
+                        <i class="fa-solid fa-circle-user" onclick="showLogin()"></i>
+                    </a>
+                    <!-- cart -->
+                    <a href="../menu/cart.html">
+                        <i class="fa-brands fa-opencart"></i>
+                        <span id="cart-count-span">0</span>
+                    </a>
+ 
+                </div>
+
+
+            </nav>
+        </header>
+		<!-- login============================================================== -->
+
+<div class="login-container hidden">
+        <h2>Login</h2>
+        <form id="loginForm">
+            <input type="email" id="email" placeholder="Example @gamil.com " required>
+            <input type="password" id="password" placeholder="Password" required>
+            <button type="submit">Login</button>
+        </form>
+        <p id="message"></p>
+    </div>
+    <!-- ========================= -->
+
+
+	<div class="main-bg">
+		<div class="overlay">
+			<div class="content">
+				<div class="container">
+					<div class="row justify-content-center align-items-center">
+
+						<div class="col text-center  to-marg to-animated">
+							<h1 class="mb-3 mt-5 bread">Contact Us</h1>
+							<p class="breadcrumbs"><span class="mr-2"><a href="../index.html">Home</a></span>
+								<span>Contact Us</span>
+							</p>
+						</div>
+
+					</div>
+				</div>
+				
+			</div>
+		</div>
+	</div>
+
+	<section class="Contact">
+			<div class="container">
+				<div class="container-wrap">
+			<div class="row wrap to-animated">
+				<div class="col-6 Contact-info">
+					<h4 class="text-light mb-4">Contact Information</h4>
+					<span class=" mb-5 d-block"><span class="text-light">Address: </span>198 West 21th Street, Suite 721 New York NY 10016</span>
+					<span class="mb-5 d-block "><span class="text-light ">Phone: </span>+ 1235 2355 98</span>
+					<span class="mb-5 d-block "><span class="text-light ">Email: </span>info@gmail.com</span>
+					<span class="mb-5 d-block "><span class="text-light ">Website: </span>Coffee.com</span>
+				</div>
+				<div class="col-6  p-4">
+					<form action="#" class="appointment-form">
+						<div class="d-flex">
+							<div class="form-group mb-4">
+								<input type="text" class="form-control" placeholder="Your Name">
+							</div>
+							<div class="form-group ml-md-4">
+								<input type="email" class="form-control" placeholder="Your Email">
+							</div>
+						</div>
+						<div class="mb-4" >
+								<input type="text" class="form-control " placeholder="Subject">
+						</div>
+						<div class="d-flex">
+							<div class="form-group mt-5">
+								<textarea name="" id="" cols="30" rows="2" class="form-control"
+									placeholder="Message"></textarea>
+							</div>
+						</div>
+						<div class="form-group">
+							<input type="submit" value="Appointment" class="btn py-3 px-4 btn-sub-contact">
+						</div>
+					</form>
+				</div>
+			</div>
+		</div>
+			</div>
+	</section>
+	<!-- =================================================================================== -->
+	
+	<script src="../js/bootstrap.min.js"></script>
+	<script src="../js/menu.js"></script>
+</body>
+
+</html>

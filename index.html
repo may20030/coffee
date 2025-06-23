@@ -1,0 +1,223 @@
+<html>
+
+<head>
+    <title>Coffee Home</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="website icon" type="jpg" href="images/iconweb.jpg">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+
+
+
+</head>
+
+<body>
+     <section id="main">
+        <!--============================== header====================== -->
+        <header class="header--to-all">
+            <!--=========================== navigation ========================= -->
+            <nav class="navigation">
+                <!-- =======menu-btn=========== -->
+                
+                <!-- home -->
+                <div class="home-btn">
+
+                    <ul>
+                        <a href="#">
+                            <li>
+                                <h3>Home</h3>
+                            </li>
+                        </a>
+                        <a href="./menu/menu.html">
+                            <li>
+                                <h3>Menu</h3>
+                            </li>
+                        </a>
+                        <a href="./menu/contact.html">
+                            <li>
+                                <h3>Contact</h3>
+                            </li>
+                        </a>
+                    </ul>
+
+                </div>
+                <!-- =============logo========== -->
+                <a href="#" class="logo">
+                    <img src="./images/logo.png" alt="logo" />
+                </a>
+                <!-- nav-btn -->
+                <div class="nav-btn">
+
+                    <!-- user -->
+                    <a class="nav-user">
+                        <i class="fa-solid fa-circle-user" onclick="showLogin()"></i>
+                    </a>
+                    <!-- cart -->
+                    <a href="./menu/cart.html">
+                        <i class="fa-brands fa-opencart"></i>
+                        <span id="cart-count-span">0</span>
+                    </a>
+
+                </div>
+
+
+            </nav>
+        </header>
+
+<!-- login============================================================== -->
+
+<div class="login-container hidden">
+        <h2>Login</h2>
+        <form id="loginForm" >
+            <input type="email" id="email" placeholder="Example @gamil.com " required>
+            <input type="password" id="password" placeholder="Password" required>
+            <button type="submit">Login</button>
+        </form>
+        <p id="message"></p>
+    </div>
+    <!-- ========================= -->
+
+        <div class="main-content to-animated">
+            <!-- text -->
+            <div class="main-content-text">
+                <strong>coffee</strong>
+                <h1>Enjoy<br>your Morning<br>Coffe</h1>
+                <p>Lorem ipsum dolor sit amet consectetur </p>
+                <span>$14.50</span>
+            </div>
+            <!-- img -->
+            <div class="main-content-img">
+                <img src="./images/model.png" alt="model">
+
+            </div>
+
+        </div>
+    </section>
+    <!-- =============search=========== -->
+    
+
+
+
+    <!--======================================================= bassant================================================= -->
+    <div class="bg-all">
+        <h2 class="popular-h2 to-animated">Popular Coffee</h2>
+        <div class="popular-coffee">
+            <div id="left" class="to-animated">
+            </div>
+            <div id="right" class="to-animated">
+                <h2>Coffee Beans Collection</h2>
+                <p>SHOP NOW</p>
+                <img src="./images/banner.png" alt="">
+            </div>
+        </div>
+        <!-- ========================================================================== -->
+        <div class="download-section to-animated">
+            <div class="download-image">
+                <img src="./images/mobile-app.jpg" alt="App Preview">
+            </div>
+            <div class="download-text">
+                <h2>Download App</h2>
+
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora doloremque accusantium sapiente
+                    optio adipisci corporis, quae laboriosam nisi magni earum deserunt blanditiis.</p>
+                <div class="app-buttons">
+                    <a href="https://apps.apple.com" target="_blank">
+                        <img src="./images/appstore-btn.png" alt=""> </a>
+                    <a href="https://play.google.com/store" target="_blank">
+                        <img src="./images/googleplay-btn.png" alt="Google Play">
+                    </a>
+                </div>
+            </div>
+        </div> <br>
+        <h2 class="popular-h2 to-animated">Rrecent Coffee Collection</h2>
+        <div class="recent">
+            <div id="recentCoffee" class="to-animated">
+
+            </div>
+        </div>
+        <div class="brand to-animated">
+
+        </div>
+
+        <h2 class="popular-h2 to-animated">Coffee Collection</h2>
+        <div class="recent">
+            <div id="coffeeCollection" class="to-animated">
+
+            </div>
+        </div>
+    </div>
+
+
+    <!--=============================================== henddddddd======================================================================== -->
+    <section class="info-section to-animated">
+        <div class="info-box">
+            <i class="fas fa-truck"></i>
+            <h3>Free Shipping</h3>
+            <p>Free Shipping for all orders</p>
+        </div>
+        <div class="info-box">
+            <i class="fas fa-headphones-alt"></i>
+            <h3>Support 24/7</h3>
+            <p>Support 24h a day</p>
+        </div>
+        <div class="info-box">
+            <i class="fas fa-sync-alt"></i>
+            <h3>100% Money Back</h3>
+            <p>You have 30 days to return</p>
+        </div>
+    </section>
+
+    <!-- Main Footer Section -->
+    <footer class="to-animated">
+        <section class="footer-content">
+            <!-- Brand & About -->
+            <section class="footer-box brand">
+                <h2>Mr. Coffee</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quia commodi laborum.</p>
+                <div class="social-icons">
+                    <i class="fab fa-facebook-f"></i>
+                    <i class="fab fa-instagram"></i>
+                    <i class="fab fa-twitter"></i>
+                    <i class="fab fa-youtube"></i>
+                </div>
+            </section>
+
+
+            <section class="footer-box">
+                <h3>Main Link's</h3>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="./menu/menu.html">Menu</a></li>
+                    <li><a href="./menu/cart.html">Cart</a></li>
+                    <li><a href="./menu/contact.html">Contact Us</a></li>
+                    <li><a href="./about.html">About Us</a></li>
+                </ul>
+            </section>
+
+
+            <section class="footer-box">
+                <h3>Social Link's</h3>
+                <ul>
+                    <li><a href="https://www.facebook.com/">Facebook</a></li>
+                    <li><a href="https://x.com/">Twitter</a></li>
+                    <li><a href="https://www.instagram.com/">Instagram</a></li>
+                    <li><a href="https://www.youtube.com/">Youtube</a></li>
+                </ul>
+            </section>
+
+
+            <section class="footer-box">
+                <h3>Subscribe Now</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                <input type="email" placeholder="Example@gmail.com">
+                <button>Subscribe</button>
+            </section>
+        </section>
+
+    </footer>
+    <script src="./js/main.js"></script>
+</body>
+
+</html>

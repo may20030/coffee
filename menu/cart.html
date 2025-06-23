@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/all.css">
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/menu.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer">
+    <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Josefin+Sans:400,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Great+Vibes" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link rel="website icon" type="jpg" href="../images/iconweb.jpg">
+
+
+    <title>Cart</title>
+</head>
+
+<body>
+    <header class="header--to-all">
+        <!--=========================== navigation ========================= -->
+        <nav class="navigation">
+            <!-- =======menu-btn=========== -->
+
+            <!-- home -->
+            <div class="home-btn">
+
+                <ul>
+                    <a href="../index.html">
+                        <li>
+                            <h3>Home</h3>
+                        </li>
+                    </a>
+                    <a href="../menu/menu.html">
+                        <li>
+                            <h3>Menu</h3>
+                        </li>
+                    </a>
+                    <a href="../menu/contact.html">
+                        <li>
+                            <h3>Contact</h3>
+                        </li>
+                    </a>
+                </ul>
+
+            </div>
+            <!-- =============logo========== -->
+            <a href="#" class="logo">
+                <img src="../images/logo.png" alt="logo" />
+            </a>
+            <!-- nav-btn -->
+            <div class="nav-btn">
+
+                <!-- user -->
+                <a class="nav-user">
+                    <i class="fa-solid fa-circle-user" onclick="showLogin()"></i>
+                </a>
+                <!-- cart -->
+                <a href="../menu/cart.html">
+                    <i class="fa-brands fa-opencart"></i>
+                    <span id="cart-count-span">0</span>
+                </a>
+
+            </div>
+
+
+        </nav>
+    </header>
+    <!-- login============================================================== -->
+
+    <div class="login-container hidden">
+        <h2>Login</h2>
+        <form id="loginForm">
+            <input type="email" id="email" placeholder="Example @gamil.com " required>
+            <input type="password" id="password" placeholder="Password" required>
+            <button type="submit">Login</button>
+        </form>
+        <p id="message"></p>
+    </div>
+    <!-- ========================= -->
+
+    <div class="main-bg">
+        <div class="overlay">
+            <div class="content">
+                <div class="container">
+                    <div class="row slider-text justify-content-center align-items-center">
+
+                        <div class="col text-center to-marg to-animated ">
+                            <h1 class="mb-3 mt-5 bread">Cart</h1>
+                            <p class="breadcrumbs"><span class="mr-2"><a href="../index.html">Home</a></span>
+                                <span>Cart</span></p>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- =================================================================================== -->
+    <section class="ftco-section">
+        <div class="container">
+            <main class="main-cart1 ">
+                <section class="header-of-cart">
+                    <span>Product</span>
+                    <span>Price</span>
+                    <span>Quantity</span>
+                    <span>Total</span>
+                </section>
+                <section id="product-in-cart" class="to-animated">
+                </section>
+                <section id="check-out" class="to-animated">
+                </section>
+            </main>
+            <div class="row justify-content-center">
+                <div class="col heading-section text-center ">
+                    <span class="subheading">Discover</span>
+                    <h2 class="mb-4">Our Products</h2>
+                    <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there
+                        live the blind texts.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="ftco-section">
+        <div class="container">
+
+            <div class="row justify-content-center ">
+                <div class="col heading-section text-end align-content-center    to-animated">
+                    <span class="subheading">Discover</span>
+                    <h2 class=" mb-5">Our Menu</h2>
+                    <p class="mb-4">Far far away, behind the word mountains, far from the countries Vokalia and
+                        Consonantia, there
+                        live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics,
+                        live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics,
+                        a large language ocean.</p>
+                    <a href="../menu/menu.html"><button class="go-to-menu">View Full Menu</button></a>
+                </div>
+                <div class="col heading-section text-center to-animated">
+                    <div class="row">
+                        <div class="col-7 ">
+                            <img src="https://themewagon.github.io/coffee1/images/menu-1.jpg" class="mb-5" width="250"
+                                height="210">
+                            <img src="https://themewagon.github.io/coffee1/images/menu-3.jpg" width="250" height="220">
+
+                        </div>
+                        <div class="col-5">
+                            <img src="https://themewagon.github.io/coffee1/images/menu-2.jpg" class="mt-5 mb-5"
+                                width="250" height="210">
+                            <img src="https://themewagon.github.io/coffee1/images/menu-4.jpg" width="250" height="220">
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col heading-section text-center  align-content-center    to-animated">
+                    <span class="subheading">Discover</span>
+                    <h2 class=" mb-5">Best Coffee Sellers</h2>
+                    <p class="mb-4">Far far away, behind the word mountains, far from the countries Vokalia and
+                        Consonantia, there live the blind texts.</p>
+                </div>
+            </div>
+            <div class="product-coffee-cups to-animated">
+
+            </div>
+
+        </div>
+    </section>
+
+    <script src="../js/bootstrap.min.js"></script>
+    <script src="./js/main.js"></script>
+    <script src="../js/menu.js"></script>
+</body>
+
+</html>

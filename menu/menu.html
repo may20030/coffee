@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="../css/all.css">
+	<link rel="stylesheet" href="../css/bootstrap.min.css">
+	<link rel="stylesheet" href="../css/style.css">
+	<link rel="stylesheet" href="../css/menu.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+		integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+		crossorigin="anonymous" referrerpolicy="no-referrer">
+	<link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Josefin+Sans:400,700" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Great+Vibes" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+	<link rel="website icon" type="jpg" href="../images/iconweb.jpg">
+	<title>Menu</title>
+
+</head>
+
+<body>
+	<header class="header--to-all">
+		<!--=========================== navigation ========================= -->
+		<nav class="navigation">
+			<!-- =======menu-btn=========== -->
+
+			<!-- home -->
+			<div class="home-btn">
+
+				<ul>
+					<a href="../index.html">
+						<li>
+							<h3>Home</h3>
+						</li>
+					</a>
+					<a href="#">
+						<li>
+							<h3>Menu</h3>
+						</li>
+					</a>
+					<a href="../menu/contact.html">
+						<li>
+							<h3>Contact</h3>
+						</li>
+					</a>
+				</ul>
+
+			</div>
+			
+			<a href="#" class="logo">
+				<img src="../images/logo.png" alt="logo" />
+			</a>
+			<!-- nav-btn -->
+			<div class="nav-btn">
+
+				<!-- user -->
+				<a class="nav-user">
+					<i class="fa-solid fa-circle-user" onclick="showLogin()"></i>
+				</a>
+				<!-- cart -->
+				<a href="../menu/cart.html">
+					<i class="fa-brands fa-opencart"></i>
+					<span id="cart-count-span">0</span>
+					
+				</a>
+
+			</div>
+
+
+		</nav>
+	</header>
+	<!-- login============================================================== -->
+
+	<div class="login-container hidden">
+		<h2>Login</h2>
+		<form id="loginForm">
+			<input type="email" id="email" placeholder="Example @gamil.com " required>
+			<input type="password" id="password" placeholder="Password" required>
+			<button type="submit">Login</button>
+		</form>
+		<p id="message"></p>
+	</div>
+	<!-- ========================= -->
+
+	<div class="main-bg">
+		<div class="overlay">
+			<div class="content">
+				<div class="container">
+					<div class="row justify-content-center align-items-center">
+
+						<div class="col text-center to-marg to-animated">
+							<h1 class="mb-3 mt-5 bread">Our Menu</h1>
+							<p class="breadcrumbs"><span class="mr-2"><a href="../index.html">Home</a></span>
+								<span>Menu</span>
+							</p>
+						</div>
+
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<section class="ftco-intro">
+		<div class="container-wrap">
+			<div class="row wrap">
+				<div class="col-8  info">
+					<div class="row no-gutters">
+						<div class="col d-flex to-animated">
+							<div class="text">
+								<h6 class="text-light"> <i class="fa-solid fa-phone"></i> 000 (123) 456 7890</h6>
+								<p>A small river named Duden flows by their place and supplies.</p>
+							</div>
+						</div>
+						<div class="col d-flex to-animated">
+							<div class="text">
+								<h6 class="text-light"><i class="fa-solid fa-location-crosshairs"></i> 198 West 21th
+									Street</h6>
+								<p> 203 Fake St. Mountain View, San Francisco, California, USA</p>
+							</div>
+						</div>
+						<div class="col d-flex to-animated">
+							<div class="text">
+								<h6 class="text-light"><i class="fa-solid fa-clock"></i> Open Monday-Friday</h6>
+								<p>8:00am - 9:00pm</p>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-4 book p-4">
+					<h3>Book a Table</h3>
+					<form action="#" class="appointment-form">
+						<div class="d-flex">
+							<div class="form-group">
+								<input type="text" class="form-control" placeholder="First Name">
+							</div>
+							<div class="form-group ml-md-4">
+								<input type="text" class="form-control" placeholder="Last Name">
+							</div>
+						</div>
+						<div class="d-flex">
+							<div class="form-group">
+								<div class="input-wrap">
+									<input type="date" class="form-control appointment_date" placeholder="Date">
+								</div>
+							</div>
+							<div class="form-group ml-md-4">
+								<div class="input-wrap">
+									<input type="time" class="form-control appointment_time ui-timepicker-input"
+										placeholder="Time" autocomplete="off">
+								</div>
+							</div>
+							<div class="form-group ">
+								<input type="number" class="form-control" placeholder="Phone">
+							</div>
+						</div>
+						<div class="d-flex">
+							<div class="form-group">
+								<textarea name="" id="" cols="30" rows="2" class="form-control"
+									placeholder="Message"></textarea>
+							</div>
+							<div class="form-group">
+								<input type="submit" value="Appointment" class="btn btn-white py-3 px-4 appointment">
+							</div>
+						</div>
+					</form>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- =================================================================================== -->
+	<section class="ftco-section">
+		<div class="container">
+			<div class="row theMainMenu">
+				<div class="col ">
+					<h2 class="h2-ftco to-animated">Desserts</h2>
+					<section class="productsMenuDesserts to-animated">
+					</section>
+				</div>
+				<div class="col ">
+					<h2 class="h2-ftco to-animated">Drinks</h2>
+					<section class="productsMenuDrinks to-animated">
+					</section>
+				</div>
+			</div>
+			<div class="row justify-content-center mb-5">
+				<div class="col heading-section text-center to-animated">
+					<span class="subheading">Discover</span>
+					<h2 class="mb-4">Our Products</h2>
+					<p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there
+						live the blind texts.</p>
+				</div>
+			</div>
+			<section class="to-add">
+				<span class="toggle-description" onclick="showDrinks()">Drinks</span>
+				<span class="toggle-description" onclick="showDesserts()">Desserts</span>
+
+			</section>
+			<section class="drinks-products to-animated">
+			</section>
+			<section class="desserts-products hidden to-animated">
+			</section>
+			<section class="pg_rotate to-animated">
+				<div>
+					<div class="ani"><i class="fa-solid fa-mug-hot"></i></div>
+
+					<h4>100</h4>
+					<p>Coffee Branch</p>
+
+
+				</div>
+				<div>
+					<div class="ani"><i class="fa-solid fa-mug-hot"></i></div>
+
+					<h4>200</h4>
+					<p>Number of Awards</p>
+
+
+				</div>
+				<div>
+					<div class="ani">
+						<i class="fa-solid fa-mug-hot"></i>
+					</div>
+
+					<h4>5M</h4>
+					<p>Happy CUSTOMER</p>
+
+				</div>
+				<div>
+					<div class="ani"><i class="fa-solid fa-mug-hot"></i></div>
+
+					<h4>900</h4>
+					<p>Staff</p>
+
+
+				</div>
+
+
+			</section>
+		</div>
+	</section>
+
+
+	<script src="../js/bootstrap.min.js"></script>
+	<script src="../js/menu.js"></script>
+</body>
+
+</html>
